@@ -1,0 +1,92 @@
+.home{
+  padding: 46px 10px;
+  background-color: #f7f7f5;
+  // 导航栏
+  .user-title{
+    display: flex;
+    font-weight: bolder;
+    .time{
+      font-size: 20px;
+    }
+    .user-name{
+      margin-left: 5px;
+      font-size: 18px;
+    }
+  }
+  .van-nav-bar__right{
+    padding: 0;
+  }
+  .van-search{
+    padding: 0 10px 0 0;
+  }
+  .van-field__left-icon .van-icon{
+    font-size: 20px;
+    color: black;
+  }
+  // 商品区域
+  .products-box{
+    padding: 10px 0;
+  }
+  // 轮播图
+  .banner-box{
+    border-radius: 15px;
+    overflow: hidden;
+    .van-swipe-item{
+      position: relative;
+      .img-name{
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+        background-color: rgba(255, 255, 255, .6);
+        font-size: 14px;
+        padding: 6px 15px;
+        border-radius: 20px;
+      }
+    }
+  }
+  // 热门推荐
+  .products-content{
+    margin: 10px 0;
+    .pro-title{
+      background-color: #0b34ba;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bolder;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .pro-item-box{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pro-item{
+      width: calc(50% - 25px);
+      background-color: white;
+      margin: 0 10px 10px 0;
+      padding: 10px;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+      .pro-img{
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .pro-name{
+        font-size: 18px;
+        font-weight: bolder;
+        margin: 8px 0;
+      }
+      .pro-enname{
+        color: #989898;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+      .pro-price{
+        color: #0b34ba;
+        font-weight: bolder;
+        font-size: 14px;
+      }
+    }
+  }
+}
